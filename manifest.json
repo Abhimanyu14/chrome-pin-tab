@@ -1,0 +1,29 @@
+{
+  // Required
+  "manifest_version": 3,
+  "name": "Tab Pin Toggler",
+  "version": "1.0.0",
+
+  // Recommended
+  "action": {
+    "default_icon": "pin.png",
+    "default_popup": "popup.html",
+    "default_title": "Tab Pin Toggler"
+  },
+  "description": "Tab Pin Toggler using Keyboard Shortcuts",
+
+  // Optional
+  "author": "Abhimanyu",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "tab-pin-toggler": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Tab Pin Toggler Keyboard Shortcuts"
+    }
+  },
+  "permissions": ["tabs"]
+}
